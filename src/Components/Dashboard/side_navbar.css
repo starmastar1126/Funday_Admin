@@ -1,0 +1,221 @@
+/* a,
+a:hover,
+a:focus {
+  font-family: 'Roboto', sans-serif;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 400 !important;
+} */
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* .line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+} */
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#boardModal {
+  z-index: 9999 !important;
+}
+
+.funday-nav {
+  position: fixed;
+  margin-top: 70px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  perspective: 1500px;
+  overflow: hidden;
+}
+
+#sidebar {
+  min-width: 245px;
+  max-width: 245px;
+  background: #eee;
+  transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
+  transform-origin: bottom left;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+  transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #eee;
+}
+
+#sidebar ul.components {
+  border-bottom: 1px solid #eee;
+}
+
+#sidebar ul p {
+  color: black;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 15px;
+  font-size: 1.2em;
+  display: block;
+  color: black;
+}
+#sidebar ul li a:hover {
+  color: white !important;
+  background: #01b3ff;
+  text-decoration: none;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded='true'] {
+  color: black;
+  background: #eee;
+}
+#sidebar ul li.active a:hover {
+  color: white;
+  background: #01b3ff;
+  text-decoration: none;
+}
+
+a[data-toggle='collapse'] {
+  position: relative;
+}
+
+ul ul a {
+  font-size: 1em !important;
+  padding-left: 30px !important;
+  /* background: ; */
+}
+
+ul.CTAs {
+  padding: 10px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386d5;
+}
+
+a.article,
+a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+  padding-top: 18px;
+  margin-left: -20px;
+  min-height: calc(100vh - 70px);
+  transition: all 0.3s;
+}
+
+#homeSubmenu {
+  border-bottom: 1px solid lightgray;
+}
+
+#homeSubmenu li a {
+  font-weight: 300 !important;
+  border: none;
+  font-size: 14px !important;
+  margin-left: 20px;
+  width: 100%;
+}
+
+#homeSubmenu li a:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+  color: black !important;
+}
+
+#sidebarCollapse {
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  position: relative;
+  left: 40px;
+}
+
+.list-unstyled li a {
+  border-bottom: 1px solid lightgray;
+  width: 110%;
+  padding-left: 35px !important;
+  position: relative;
+  right: 23px;
+}
+
+#sidebarCollapse span {
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+  display: block;
+  background: #555;
+  transition: all 0.2s cubic-bezier(0.81, -0.33, 0.345, 1.375);
+  transition-delay: 0.5s;
+}
+
+#sidebarCollapse span:first-of-type {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+  opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+
+#sidebarCollapse.active span {
+  transform: none;
+  opacity: 1;
+  margin: 5px auto;
+}
+
+.new-board-btn {
+  position: relative;
+  left: 170px;
+  margin: 5px;
+  border: none;
+  background: transparent;
+}
+
+.new-board-btn:hover {
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  background: white;
+  z-index: 500;
+}
+
+.new-board-btn i {
+  color: #01b3ff;
+  border-radius: 20px;
+  padding: 3px;
+  font-size: 15px;
+}
